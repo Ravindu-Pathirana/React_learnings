@@ -4,7 +4,7 @@ const student = ()=>{
         {},
         [React.createElement("h3",{},"Ravindu"),
         React.createElement("h3",{},"22 years old"),
-        React.createElement("h3",{},"University of Moratuwa"),]
+        React.createElement("h3",{},"University of Moratuwa")]
     );
 };
 
