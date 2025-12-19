@@ -1,3 +1,16 @@
+This is Creating React App using JavaScript(.jsx) . so here this is the command - yarn create react-app my-react-app
+
+prereqistics - Run:-
+              node -v
+              npm -v
+              yarn -v
+then you must see like this accordingly:-
+v18.20.x
+9.x.x
+1.22.x
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
