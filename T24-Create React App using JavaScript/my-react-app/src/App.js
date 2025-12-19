@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import StudentCard from '/Volumes/My Disk 2/React/React_learnings/T24-Create React App using JavaScript/my-react-app/src/components/StudentCard';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <h1>My React App</h1>
+      <StudentCard name="Ravindu" age={22} university="University of Moratuwa"/>
+      <StudentCard name="Kamal" age={21} university="University of Kelaniya"/>
+      <StudentCard name="Pasindu" age={20} university="University of Colombo"/>
+      <StudentCard name="Yarn" age={24} university="University of J'Pura"/>
+      <StudentCard name="Anne" age={20} university="University of Peradeniya"/>
     </div>
   );
 }
