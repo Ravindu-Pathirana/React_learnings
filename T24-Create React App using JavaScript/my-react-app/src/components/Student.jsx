@@ -10,6 +10,4 @@ const Student =({name,age,university})=>{
 
     );
 };
-
-
 export default Student;
