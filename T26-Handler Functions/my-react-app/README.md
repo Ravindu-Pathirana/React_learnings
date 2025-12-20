@@ -52,22 +52,9 @@ What happens here?
 	•	To respond to user actions
 	•	To control app behavior
 
-Example with state:
-
-function App() {
-  const [count, setCount] = React.useState(0);
-
-  function handleIncrement() {
-    setCount(count + 1);
-  }
-
-  return <button onClick={handleIncrement}>{count}</button>;
-}
-
-
 ⸻
 
-⚠️ Important rule (exam-friendly)
+⚠️ Important rule 
 
 ❌ Don’t call the function directly:
 
@@ -84,12 +71,5 @@ onClick={handleClick}    // CORRECT
 
 Handler functions connect user actions to application logic in React.
 
-⸻
 
-If you want next, I can:
-	•	Explain event object (e) simply
-	•	Explain handler functions in .tsx
-	•	Show common mistakes
-	•	Explain handler vs normal function
 
-Just tell me 👍
