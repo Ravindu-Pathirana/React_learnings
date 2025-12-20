@@ -12,5 +12,6 @@ const StudentCard = ({name,age,university}) => {
     
 };
 
+
 export const test = 10;
 export default StudentCard;
