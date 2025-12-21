@@ -1,33 +1,38 @@
-ArrayMap() Function :-
-What this does:
-• map() loops through the array
-• Displays each name
+Array map() and filter() in React
 
-function ArrayMap({ names }) {
+1. map() function
 
-function ArrayMap({ names }) {
-  return (
-    <div>
-      <h2>Using map()</h2>
-      <ul>
-        {names.map((name, index) => (
-          <li key={index}>{name}</li>
-        ))}
-      </ul>
-    </div>
-  );
-}
+The map() function is used to loop through an array and display each item in the UI.
 
-export default ArrayMap;
+In this project, map() is used to show a list of names on the screen.
 
+Example use:
+	•	Takes each name from the array
+	•	Converts it into a JSX element (<li>)
+	•	Displays all names as a list
 
-ArrayFilter() Function :-
-What this does:
-• filter() selects names starting with A
-• map() displays the filtered names
+👉 map() is mainly used for rendering lists in React.
 
-function ArrayFilter({ names }) {
+⸻
 
-const filteredNames = names.filter((name) => name.startsWith("A"));
+2. filter() function
 
+The filter() function is used to select specific items from an array based on a condition.
 
+In this project, filter() is used to:
+	•	Select only names that start with a specific letter
+	•	Display only those selected names
+
+👉 filter() is mainly used for showing filtered or searched data.
+
+⸻
+
+Simple difference
+	•	map() → displays all items
+	•	filter() → selects specific items
+
+⸻
+
+Summary
+
+This project demonstrates how map() and filter() can be used in React components to work with arrays and display dynamic data in a simple and readable way.
