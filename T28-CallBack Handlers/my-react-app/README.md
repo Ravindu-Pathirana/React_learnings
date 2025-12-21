@@ -1,83 +1,50 @@
-This is Creating React App using JavaScript(.jsx) . so here this is the command - yarn create react-app my-react-app
+✅ What is a callback handler in React?
 
-prereqistics - Run:-
-              node -v
-              npm -v
-              yarn -v
-then you must see like this accordingly:-
-v18.20.x
-9.x.x
-1.22.x
+A callback handler is a function passed from a parent parent component to a Child component, so the child can send data or trigger actions in the parent.
 
+⸻
 
+🧠 Simple definition (remember this)
 
-# Getting Started with Create React App
+A callback handler allows a child component to communicate with its parent.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+⸻
 
-## Available Scripts
+🧩 Simple example
 
-In the project directory, you can run:
+Parent component
 
-### `yarn start`
+function Parent() {
+  function handleMessage(msg) {
+    console.log(msg);
+  }
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  return <Child onSend={handleMessage} />;
+}
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Child component
 
-### `yarn test`
+function Child({ onSend }) {
+  return <button onClick={() => onSend("Hello Parent")}>Send</button>;
+}
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+What happens?
+	•	Parent passes handleMessage to Child
+	•	Child calls it on button click
+	•	Parent receives data from Child
 
-### `yarn build`
+⸻
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🔁 Why callback handlers are needed
+	•	React data flow is one-way (parent → child)
+	•	Callback handlers let data go child → parent
+	•	Used for:
+	•	Form submissions
+	•	Button clicks
+	•	Updating parent state
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+⸻
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🧠 One-line summary (best for exams)
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Callback handlers are functions passed as props that allow child components to notify or update parent components.
