@@ -1,11 +1,11 @@
-ArrayFilter() Function :-
+ArrayMap() Function :-
 What this does:
 • map() loops through the array
 • Displays each name
 
-    function ArrayMap({ names }) {
+function ArrayMap({ names }) {
 
-return (
+"return (
 <div>
 <ul>
 {names.map((name, index) => (
@@ -14,28 +14,16 @@ return (
 </ul>
 </div>
 );
-}
+}"
 
-export default ArrayMap;
 
-ArrayMap() Function :-
+ArrayFilter() Function :-
 What this does:
 • filter() selects names starting with A
 • map() displays the filtered names
 
-    function ArrayFilter({ names }) {
+function ArrayFilter({ names }) {
 
 const filteredNames = names.filter((name) => name.startsWith("A"));
 
-return (
-<div>
-<ul>
-{filteredNames.map((name, index) => (
-<li key={index}>{name}</li>
-))}
-</ul>
-</div>
-);
-}
 
-export default ArrayFilter;
