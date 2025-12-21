@@ -5,16 +5,20 @@ What this does:
 
 function ArrayMap({ names }) {
 
-"return (
-<div>
-<ul>
-{names.map((name, index) => (
-<li key={index}>{name}</li>
-))}
-</ul>
-</div>
-);
-}"
+function ArrayMap({ names }) {
+  return (
+    <div>
+      <h2>Using map()</h2>
+      <ul>
+        {names.map((name, index) => (
+          <li key={index}>{name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default ArrayMap;
 
 
 ArrayFilter() Function :-
