@@ -13,13 +13,13 @@ React Fragments are used to group multiple elements without adding extra HTML el
 
 ⸻
 
-## Why use Fragments?
+### Why use Fragments?
 
 • Avoid unnecessary <div> wrappers
 • Keep the DOM clean
 • Improve readability
 ⸻
 
-## One-line summary (best to remember)
+### One-line summary (best to remember)
 
 React Fragments let you return multiple elements without adding extra nodes to the DOM.
