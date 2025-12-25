@@ -5,7 +5,7 @@ const SearchBar = ({ onSearch }) => {
     //console.log(`Searching for ${event.target.value}`);
     if (onSearch) onSearch(event);
   };
-
+  
   return (
     <div className="form-container">
       <form className="form-wrapper">
