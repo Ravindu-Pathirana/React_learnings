@@ -8,7 +8,7 @@ In a controlled component:
 	•	React controls the data, not the DOM
 
 Example
-
+```
 function App() {
   const [name, setName] = React.useState("");
 
@@ -23,7 +23,7 @@ function App() {
     </>
   );
 }
-
+```
 How it works
 	•	value={name} → React controls the input value
 	•	onChange → updates state when the user types
