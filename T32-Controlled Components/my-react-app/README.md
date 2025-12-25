@@ -8,6 +8,7 @@ In a controlled component:
 	•	React controls the data, not the DOM
 
 Example
+<<<<<<< Updated upstream
 ```
 function App() {
   const [name, setName] = React.useState("");
@@ -37,4 +38,35 @@ Controlled components keep form data in React state, making it easier to validat
 
 One-line summary
 
+=======
+
+function App() {
+  const [name, setName] = React.useState("");
+
+  function handleChange(e) {
+    setName(e.target.value);
+  }
+
+  return (
+    <>
+      <input value={name} onChange={handleChange} />
+      <p>{name}</p>
+    </>
+  );
+}
+
+How it works
+	•	value={name} → React controls the input value
+	•	onChange → updates state when the user types
+	•	UI updates automatically when state changes
+
+Summary
+
+Controlled components keep form data in React state, making it easier to validate, manage, and control user input.
+
+⸻
+
+One-line summary
+
+>>>>>>> Stashed changes
 A controlled component is an input element controlled by React state.
