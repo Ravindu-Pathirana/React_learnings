@@ -38,7 +38,9 @@ class App extends React.Component {
             return (
               <Student
                 key={index}
-                image={"https://cdn.pixabay.com/photo/2019/05/21/22/21/boy-4220282_1280.png"} 
+                image={
+                  "https://cdn.pixabay.com/photo/2019/05/21/22/21/boy-4220282_1280.png"
+                }
                 name={student.name}
                 age={student.age}
                 university={student.university}

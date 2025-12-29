@@ -3,9 +3,9 @@ Class Components in React
 A class component is a way to create a React component using a JavaScript class.
 
 Class components:
-	•	Extend React.Component
-	•	Use a render() method to return JSX
-	•	Were commonly used before React Hooks
+• Extend React.Component
+• Use a render() method to return JSX
+• Were commonly used before React Hooks
 
 ⸻
 
@@ -21,10 +21,10 @@ Example
 ⸻
 
 Key points
-	•	render() is required
-	•	JSX is returned inside render()
-	•	Class components can use state and props
-	•	Hooks are not used in class components
+• render() is required
+• JSX is returned inside render()
+• Class components can use state and props
+• Hooks are not used in class components
 
 ⸻
 

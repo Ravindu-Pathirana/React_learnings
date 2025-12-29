@@ -14,8 +14,11 @@ class Search extends Component {
 
   render() {
     return (
-      <div>
+      <div className="search-bar-container">
         <input
+          className="search-input"
+          placeholder="Enter Name here..."
+          focus ="true"
           type="text"
           onChange={this.props.onSearch}
           value={this.props.searchText}
