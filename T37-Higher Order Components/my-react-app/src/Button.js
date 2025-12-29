@@ -1,5 +1,5 @@
 import React from 'react';
-const Button =({text, clickTrigger}) => {
+const Button =({text, clickTrigger, hoverTrigger}) => {
 
 
     const mouseClick=(e)=>{
@@ -12,7 +12,11 @@ const Button =({text, clickTrigger}) => {
     }
 
     const mouseHover =()=>{
-        clickTrigger();
+        if (hoverTrigger){
+            hoverTrigger();
+        }else{
+           console.log("No hoverTrigger Found"); 
+        }
     }
 
     return (
