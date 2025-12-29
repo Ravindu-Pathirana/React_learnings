@@ -37,7 +37,8 @@ Example
   render() {
     return <h1>Lifecycle Example</h1>;
   }
-}```
+}
+```
 
 
 ⸻
