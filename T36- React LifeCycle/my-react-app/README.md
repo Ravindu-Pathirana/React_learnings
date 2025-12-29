@@ -40,14 +40,13 @@ Example
 }
 ```
 
-
 ⸻
 
 useEffect Lifecycle Equivalent (Function Components)
 
 In function components, the useEffect Hook is used instead of lifecycle methods.
-	•	Runs after render
-	•	Can act like mount, update, and unmount
+• Runs after render
+• Can act like mount, update, and unmount
 
 Example
 
@@ -57,12 +56,13 @@ console.log("Component mounted or updated");
 return () => {
 console.log("Component unmounted");
 };
-}, []);```
+}, []);
+```
 
 How it maps to class lifecycle
-	•	componentDidMount → useEffect(() => {}, [])
-	•	componentDidUpdate → useEffect(() => {})
-	•	componentWillUnmount → cleanup function in useEffect
+• componentDidMount → useEffect(() => {}, [])
+• componentDidUpdate → useEffect(() => {})
+• componentWillUnmount → cleanup function in useEffect
 
 ⸻
 
@@ -75,4 +75,3 @@ Class components use lifecycle methods, while function components use the useEff
 One-line summary
 
 React lifecycle methods manage component behavior during mounting, updating, and unmounting.
-
