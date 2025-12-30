@@ -1,0 +1,143 @@
+/* ===============================
+   Global Reset
+================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===============================
+   App Layout
+================================ */
+.App {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App-header {
+  background: linear-gradient(135deg, #1f2933, #111827);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+/* ===============================
+   React Logo
+================================ */
+.App-logo {
+  height: 120px;
+  margin-bottom: 20px;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===============================
+   Form Container
+================================ */
+form {
+  background: #ffffff;
+  color: #1f2933;
+  padding: 25px 30px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* ===============================
+   Form Rows
+================================ */
+form > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+/* ===============================
+   Inputs
+================================ */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+/* ===============================
+   Radio Buttons
+================================ */
+input[type="radio"] {
+  margin-right: 4px;
+  margin-left: 8px;
+}
+
+/* ===============================
+   Checkboxes (Hobbies)
+================================ */
+form div:last-child {
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form div:last-child label {
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+/* ===============================
+   Responsive
+================================ */
+@media (max-width: 480px) {
+  form {
+    padding: 20px;
+  }
+
+  form > div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  input,
+  select {
+    width: 100%;
+    margin-top: 6px;
+  }
+}
